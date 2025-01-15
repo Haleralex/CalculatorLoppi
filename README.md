@@ -1,41 +1,42 @@
-# Simple Calculator
+## Simple Calculator
 
-## Описание
-Этот проект представляет собой простой калькулятор, поддерживающий только одну математическую операцию — сложение. Он разработан в рамках тестового задания для Loppi Poppi LLC. Приложение сохраняет состояние между сессиями, включая введенные выражения и историю вычислений.
+## Description
+This project is a simple calculator that supports only one math operation, addition. It is developed as part of a test case for Loppi Poppi LLC. The application saves state between sessions, including entered expressions and calculation history.
 
-## Особенности
-- Поддерживает ввод выражений в формате: `число + число` (например, `54+21`).
-- Выводит сообщение об ошибке при некорректных выражениях (например, `45+-88`).
-- Сохраняет состояние приложения между сеансами.
-- История вычислений отображается на экране.
-- Реализовано с использованием архитектуры Clean Architecture и шаблона MVP (Model-View-Presenter).
-- Приложение разбито на модули для повторного использования кода.
+## Features
+- Supports entering expressions in the format: `number + number` (e.g. `54+21`).
+- Displays an error message for invalid expressions (e.g., `45+-88`).
+- Saves the state of the application between sessions.
+- Computation history is displayed on the screen.
+- Implemented using Clean Architecture and MVP (Model-View-Presenter) pattern.
+- The application is broken into modules for code reuse.
 
-## Технические детали
-- **Архитектура:** Clean Architecture.
-- **Шаблон:** MVP (Model-View-Presenter).
+## Technical Details
+- **Architecture:** Clean Architecture.
+- **Template:** MVP (Model-View-Presenter).
 - **DI container:** Zenject.
-- **Модули:**
-  - **Core Calculator:** Логика обработки выражений.
-  - **UI Module:** Отображение интерфейса и обработка ошибок.
+- **Modules:**
+  - **Core Calculator:** Expression processing logic.
+  - **UI Module:**UI display and error handling.
 
-## Сценарий использования
-1. Открытие приложения: Пользователь видит поле ввода и кнопку `Result`.
-2. Ввод выражения: Пользователь вводит выражение в формате `число + число`.
-3. Нажатие `Result`: 
-   - При корректном вводе отображается результат.
-   - При ошибке отображается сообщение `Error`, и появляется диалоговое окно с объяснением.
-4. Закрытие и повторное открытие приложения: Состояние (ввод и история) сохраняется и восстанавливается.
+## Usage Scenario
+1- Opening the application: User sees the input field and the `Result` button.
+2. Entering an expression: The user enters an expression in the format `number + number`.
+3. Pressing `Result`: 
+   - On correct entry, the result is displayed.
+   - If there is an error, `Error` is displayed and a dialog box with an explanation appears.
+4. Closing and reopening the application: The state (input and history) is saved and restored.
 
-## Установка и запуск
-1. Клонируйте репозиторий:
+Translated with DeepL.com (free version)
+## Installation and startup
+1. Clone the repository:
    ```bash
    git clone https://github.com/Haleralex/CalculatorLoppi.git
-2. Откройте проект в Unity (рекомендуемая версия: 2021.3 или выше).
+2. Open the project in Unity (recommended version: 2021.3 or higher).
 
-3. Выполните сборку проекта:
-   - В Unity выберите **File > Build Settings**.
-   - Укажите целевую платформу (Windows, macOS или Linux).
-   - Нажмите кнопку **Build**.
+3. Build the project:
+   - In Unity, select **File > Build Settings**.
+   - Specify the target platform (Windows, macOS, or Linux, or Android or iOS).
+   - Click **Build**.
 
-4. Запустите собранное приложение на выбранной платформе.
+4. Run the built application on the selected platform.
